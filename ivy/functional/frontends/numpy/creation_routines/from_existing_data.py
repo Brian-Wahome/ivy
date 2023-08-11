@@ -38,7 +38,6 @@ def frombuffer(buffer, dtype=float, count=-1, offset=0, *, like=None):
 
 
 @handle_numpy_dtype
-@to_ivy_arrays_and_back
 def fromstring(string, dtype=float, count=-1, *, sep, like=None):
     try:
         split_string = string.split(sep)
